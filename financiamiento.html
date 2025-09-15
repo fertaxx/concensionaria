@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiamiento Toyota - Toyota Elite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <i class="fab fa-toyota"></i>
+                TOYOTA ELITE
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="vehiculos.html" class="nav-link">Vehículos</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="#" class="nav-link active">Financiamiento</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero de Financiamiento -->
+    <section class="financiamiento-hero">
+        <div class="container">
+            <h1>Financiamiento Toyota</h1>
+            <p>Haz realidad tu sueño de tener un auto Toyota con nuestros planes de financiamiento flexibles</p>
+        </div>
+    </section>
+
+    <!-- Financiamiento Principal -->
+    <section class="financiamiento">
+        <div class="container">
+            <div class="financiamiento-content">
+                <div class="financiamiento-info">
+                    <h2>Financiamiento Fácil y Rápido</h2>
+                    <p>Obtén el auto que siempre has querido con nuestros planes de financiamiento diseñados para adaptarse a tu presupuesto.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Aprobación en 24 horas</li>
+                        <li><i class="fas fa-check"></i> Tasas competitivas desde 8.9%</li>
+                        <li><i class="fas fa-check"></i> Hasta 72 meses de plazo</li>
+                        <li><i class="fas fa-check"></i> Sin enganche en vehículos seleccionados</li>
+                        <li><i class="fas fa-check"></i> Sin penalización por pago anticipado</li>
+                        <li><i class="fas fa-check"></i> Seguros incluidos disponibles</li>
+                    </ul>
+                </div>
+                <div class="calculadora" id="calculadora">
+                    <h3>Calculadora de Financiamiento</h3>
+                    <div class="calc-input">
+                        <label>Precio del Vehículo:</label>
+                        <input type="number" id="precio-vehiculo" placeholder="$500,000">
+                    </div>
+                    <div class="calc-input">
+                        <label>Enganche:</label>
+                        <input type="number" id="enganche" placeholder="$100,000">
+                    </div>
+                    <div class="calc-input">
+                        <label>Plazo (meses):</label>
+                        <select id="plazo">
+                            <option value="12">12 meses</option>
+                            <option value="24">24 meses</option>
+                            <option value="36">36 meses</option>
+                            <option value="48">48 meses</option>
+                            <option value="60">60 meses</option>
+                            <option value="72">72 meses</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" onclick="calcularPago()">Calcular Pago</button>
+                    <div class="resultado" id="resultado-calculo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes de Financiamiento -->
+    <section class="planes-financiamiento">
+        <div class="container">
+            <h2>Nuestros Planes de Financiamiento</h2>
+            <div class="planes-grid">
+                <div class="plan-card">
+                    <h3>Plan Básico</h3>
+                    <div class="plan-tasa">8.9% <span>anual</span></div>
+                    <ul>
+                        <li>Enganche mínimo 30%</li>
+                        <li>Plazo hasta 48 meses</li>
+                        <li>Aprobación estándar</li>
+                        <li>Seguro básico incluido</li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-secondary">Solicitar</a>
+                </div>
+                <div class="plan-card destacado">
+                    <div class="plan-badge">Más Popular</div>
+                    <h3>Plan Premium</h3>
+                    <div class="plan-tasa">9.5% <span>anual</span></div>
+                    <ul>
+                        <li>Enganche mínimo 20%</li>
+                        <li>Plazo hasta 60 meses</li>
+                        <li>Aprobación rápida</li>
+                        <li>Seguro amplio incluido</li>
+                        <li>Mantenimiento 1 año gratis</li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-primary">Solicitar</a>
+                </div>
+                <div class="plan-card">
+                    <h3>Plan Elite</h3>
+                    <div class="plan-tasa">10.2% <span>anual</span></div>
+                    <ul>
+                        <li>Sin enganche*</li>
+                        <li>Plazo hasta 72 meses</li>
+                        <li>Aprobación express</li>
+                        <li>Seguro premium incluido</li>
+                        <li>Mantenimiento 2 años gratis</li>
+                        <li>Garantía extendida</li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-secondary">Solicitar</a>
+                </div>
+            </div>
+            <p class="planes-nota">*Sujeto a aprobación crediticia. Aplican términos y condiciones.</p>
+        </div>
+    </section>
+
+    <!-- Requisitos -->
+    <section class="requisitos-section">
+        <div class="container">
+            <h2>Requisitos para Financiamiento</h2>
+            <div class="requisitos-content">
+                <div class="requisitos-personales">
+                    <h3><i class="fas fa-user"></i> Requisitos Personales</h3>
+                    <ul>
+                        <li>Ser mayor de edad (18 años)</li>
+                        <li>Identificación oficial vigente</li>
+                        <li>CURP</li>
+                        <li>Comprobante de domicilio (no mayor a 3 meses)</li>
+                        <li>Acta de nacimiento</li>
+                        <li>Estado de cuenta bancario</li>
+                    </ul>
+                </div>
+                <div class="requisitos-ingresos">
+                    <h3><i class="fas fa-money-bill-wave"></i> Requisitos de Ingresos</h3>
+                    <ul>
+                        <li>Ingresos mínimos comprobables de $15,000 MXN</li>
+                        <li>Recibos de nómina (últimos 3 meses)</li>
+                        <li>Constancia de trabajo</li>
+                        <li>Declaración anual (trabajadores independientes)</li>
+                        <li>Estados de cuenta bancarios</li>
+                        <li>Referencias laborales</li>
+                    </ul>
+                </div>
+                <div class="requisitos-crediticios">
+                    <h3><i class="fas fa-chart-line"></i> Historial Crediticio</h3>
+                    <ul>
+                        <li>Buen historial en Buró de Crédito</li>
+                        <li>Score crediticio mínimo de 650</li>
+                        <li>Sin reportes negativos recientes</li>
+                        <li>Capacidad de pago demostrable</li>
+                        <li>Referencias personales y comerciales</li>
+                        <li>Estabilidad laboral mínima 1 año</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Solicitud -->
+    <section class="proceso-solicitud">
+        <div class="container">
+            <h2>Proceso de Solicitud</h2>
+            <div class="proceso-steps">
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>1. Solicitud</h3>
+                    <p>Llena nuestra solicitud en línea o visítanos en sucursal</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <h3>2. Evaluación</h3>
+                    <p>Revisamos tu información y historial crediticio</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>3. Aprobación</h3>
+                    <p>Recibe la respuesta en máximo 24 horas</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>4. Firma</h3>
+                    <p>Firma tu contrato y recibe tu vehículo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios Adicionales -->
+    <section class="beneficios-adicionales">
+        <div class="container">
+            <h2>Beneficios Adicionales</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Seguro de Vida</h3>
+                    <p>Protección para ti y tu familia en caso de imprevistos</p>
+                </div>
+                <div class="beneficio-card">
+                    <i class="fas fa-car-crash"></i>
+                    <h3>Seguro de Daños</h3>
+                    <p>Cobertura completa contra accidentes y robo</p>
+                </div>
+                <div class="beneficio-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Mantenimiento</h3>
+                    <p>Servicios de mantenimiento con descuentos especiales</p>
+                </div>
+                <div class="beneficio-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Asistencia 24/7</h3>
+                    <p>Servicio de grúa y asistencia vial las 24 horas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Cuánto tiempo tarda la aprobación?</h3>
+                    <p>El proceso de aprobación toma máximo 24 horas hábiles una vez que recibimos toda la documentación completa.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Puedo hacer pagos anticipados?</h3>
+                    <p>Sí, puedes hacer pagos anticipados sin penalización alguna, lo que te ayudará a reducir el monto total de intereses.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Qué pasa si tengo mal historial crediticio?</h3>
+                    <p>Evaluamos cada caso individualmente. Contamos con programas especiales para personas que buscan mejorar su historial crediticio.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Puedo cambiar mi plan de pagos?</h3>
+                    <p>Sí, ofrecemos opciones de reestructuración de pagos en caso de cambios en tu situación financiera.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para Obtener tu Financiamiento?</h2>
+                <p>Nuestros asesores financieros están listos para ayudarte a encontrar el plan perfecto</p>
+                <div class="cta-buttons">
+                    <a href="contacto.html" class="btn btn-primary">Solicitar Ahora</a>
+                    <a href="vehiculos.html" class="btn btn-secondary">Ver Vehículos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-car"></i>
+                        <span>AutoElite</span>
+                    </div>
+                    <p>Tu concesionaria de confianza con más de 15 años de experiencia en el mercado automotriz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="vehiculos.html">Catálogo</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="financiamiento.html">Financiamiento</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Venta de Autos</a></li>
+                        <li><a href="#">Financiamiento</a></li>
+                        <li><a href="#">Servicio Técnico</a></li>
+                        <li><a href="#">Garantías</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@autoelite.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, CDMX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoElite. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

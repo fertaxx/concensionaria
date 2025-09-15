@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Autos Toyota - Toyota Elite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <i class="fab fa-toyota"></i>
+                TOYOTA ELITE
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link active">Vehículos</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="financiamiento.html" class="nav-link">Financiamiento</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero de Vehículos -->
+    <section class="vehiculos-hero">
+        <div class="container">
+            <h1>Catálogo de Autos Toyota</h1>
+<p>Encuentra el auto Toyota perfecto para ti entre nuestra selección oficial</p>
+        </div>
+    </section>
+
+    <!-- Filtros de Búsqueda -->
+    <section class="search-filters">
+        <div class="container">
+            <h2>Encuentra tu Auto Toyota Ideal</h2>
+            <div class="filter-grid">
+                <select id="precio" class="filter-select">
+                    <option value="">Rango de Precio</option>
+                    <option value="0-300000">$0 - $300,000</option>
+                    <option value="300000-500000">$300,000 - $500,000</option>
+                    <option value="500000-800000">$500,000 - $800,000</option>
+                    <option value="800000+">$800,000+</option>
+                </select>
+                <button class="btn btn-primary" onclick="filtrarVehiculos()">
+                    <i class="fas fa-search"></i> Buscar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Vehículos -->
+    <section class="vehiculos">
+        <div class="container">
+            <div class="vehiculos-header">
+                <h2>Todos Nuestros Autos Toyota</h2>
+                <div class="vehiculos-stats">
+                    <span id="vehiculos-count">6 autos encontrados</span>
+                </div>
+            </div>
+            <div class="vehiculos-grid" id="vehiculos-grid">
+                <!-- Los vehículos se cargarán dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios Relacionados -->
+    <section class="servicios-relacionados">
+        <div class="container">
+            <h2>Servicios Incluidos</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <i class="fas fa-car-side"></i>
+                    <h3>Prueba de Manejo</h3>
+                    <p>Prueba cualquier vehículo sin compromiso</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Garantía Extendida</h3>
+                    <p>Protección completa para tu inversión</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Financiamiento</h3>
+                    <p>Planes flexibles desde 8.9% anual</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Mantenimiento</h3>
+                    <p>Servicio técnico especializado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-car"></i>
+                        <span>AutoElite</span>
+                    </div>
+                    <p>Tu concesionaria de confianza con más de 15 años de experiencia en el mercado automotriz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="vehiculos.html">Catálogo</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="financiamiento.html">Financiamiento</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Venta de Autos</a></li>
+                        <li><a href="#">Financiamiento</a></li>
+                        <li><a href="#">Servicio Técnico</a></li>
+                        <li><a href="#">Garantías</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@autoelite.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, CDMX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoElite. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

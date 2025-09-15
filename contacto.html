@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Toyota Elite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <i class="fab fa-toyota"></i>
+                TOYOTA ELITE
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="vehiculos.html" class="nav-link">Vehículos</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="financiamiento.html" class="nav-link">Financiamiento</a></li>
+                <li><a href="#" class="nav-link active">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero de Contacto -->
+    <section class="contacto-hero">
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte a encontrar el auto Toyota perfecto para ti</p>
+        </div>
+    </section>
+
+    <!-- Contacto Principal -->
+    <section class="contacto">
+        <div class="container">
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <h2>Información de Contacto</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av. miraflores 123<br>Lima Peru</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfonos</h4>
+                            <p>Ventas: +52 55 1234 5678<br>
+                            Servicio: +52 55 1234 5679<br>
+                            Financiamiento: +52 55 1234 5680</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Correos Electrónicos</h4>
+                            <p>info@autoelite.com<br>
+                            ventas@autoelite.com<br>
+                            servicio@autoelite.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horarios de Atención</h4>
+                            <p>Lunes a Viernes: 9:00 AM - 7:00 PM<br>
+                            Sábados: 9:00 AM - 5:00 PM<br>
+                            Domingos: 10:00 AM - 3:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contacto-form" id="contacto-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Correo electrónico" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="telefono" placeholder="Teléfono" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="interes" required>
+                                <option value="">¿En qué estás interesado?</option>
+                                <option value="compra">Comprar un vehículo</option>
+                                <option value="financiamiento">Información de financiamiento</option>
+                                <option value="servicio">Servicio técnico</option>
+                                <option value="garantia">Garantías</option>
+                                <option value="cotizacion">Solicitar cotización</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" placeholder="Cuéntanos más detalles sobre lo que necesitas..." rows="5"></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terminos" required>
+                        <label for="terminos">Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a> y la política de privacidad</label>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter">
+                        <label for="newsletter">Deseo recibir información sobre promociones y nuevos vehículos</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa y Ubicación -->
+    <section class="ubicacion-section">
+        <div class="container">
+            <h2>Nuestra Ubicación</h2>
+            <div class="ubicacion-content">
+                <div class="mapa-placeholder">
+                    <div class="mapa-info">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>AutoElite Concesionaria</h3>
+                        <p>Av. Principal 123, Colonia Centro<br>Ciudad de México, CDMX 01234</p>
+                        <div class="mapa-acciones">
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-directions"></i> Cómo Llegar
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-phone"></i> Llamar Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="transporte-info">
+                    <h3>Cómo Llegar</h3>
+                    <div class="transporte-opciones">
+                        <div class="transporte-opcion">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <h4>En Auto</h4>
+                                <p>Estacionamiento gratuito disponible. Fácil acceso desde Periférico y Viaducto.</p>
+                            </div>
+                        </div>
+                        <div class="transporte-opcion">
+                            <i class="fas fa-subway"></i>
+                            <div>
+                                <h4>Metro</h4>
+                                <p>Estación más cercana: Línea 2, Estación Centro. A 5 minutos caminando.</p>
+                            </div>
+                        </div>
+                        <div class="transporte-opcion">
+                            <i class="fas fa-bus"></i>
+                            <div>
+                                <h4>Transporte Público</h4>
+                                <p>Rutas 15, 23, 45 y 67 pasan frente a nuestras instalaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo de Ventas -->
+    <section class="equipo-ventas">
+        <div class="container">
+            <h2>Nuestro Equipo de Ventas</h2>
+            <p class="section-subtitle">Conoce a los expertos que te ayudarán a encontrar tu vehículo ideal</p>
+            <div class="equipo-grid">
+                <div class="miembro-card">
+                    <div class="miembro-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Carlos Mendoza</h3>
+                    <p class="cargo">Gerente de Ventas</p>
+                    <p class="experiencia">15+ años de experiencia</p>
+                    <div class="contacto-miembro">
+                        <p><i class="fas fa-phone"></i> Ext. 101</p>
+                        <p><i class="fas fa-envelope"></i> carlos@autoelite.com</p>
+                    </div>
+                    <p class="especialidad">Especialista en SUVs y vehículos familiares</p>
+                </div>
+                <div class="miembro-card">
+                    <div class="miembro-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Ana García</h3>
+                    <p class="cargo">Asesora Senior</p>
+                    <p class="experiencia">8+ años de experiencia</p>
+                    <div class="contacto-miembro">
+                        <p><i class="fas fa-phone"></i> Ext. 102</p>
+                        <p><i class="fas fa-envelope"></i> ana@autoelite.com</p>
+                    </div>
+                    <p class="especialidad">Experta en sedanes y vehículos ejecutivos</p>
+                </div>
+                <div class="miembro-card">
+                    <div class="miembro-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Roberto Silva</h3>
+                    <p class="cargo">Especialista en Financiamiento</p>
+                    <p class="experiencia">12+ años de experiencia</p>
+                    <div class="contacto-miembro">
+                        <p><i class="fas fa-phone"></i> Ext. 103</p>
+                        <p><i class="fas fa-envelope"></i> roberto@autoelite.com</p>
+                    </div>
+                    <p class="especialidad">Experto en créditos y planes de pago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Rápidas -->
+    <section class="faq-contacto">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Necesito cita para ver un vehículo?</h3>
+                    <p>No es necesario, pero recomendamos agendar una cita para garantizar la disponibilidad del vehículo y recibir atención personalizada.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Aceptan vehículos como parte de pago?</h3>
+                    <p>Sí, evaluamos tu vehículo actual y te ofrecemos el mejor precio como parte de pago para tu nuevo auto.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Cuánto tiempo toma el proceso de compra?</h3>
+                    <p>El proceso completo puede tomar de 2 a 4 horas, dependiendo del financiamiento y trámites necesarios.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Ofrecen garantía en todos los vehículos?</h3>
+                    <p>Sí, todos nuestros vehículos incluyen garantía. Los nuevos tienen garantía de fábrica y los seminuevos garantía de la concesionaria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Prefieres Hablar Directamente?</h2>
+                <p>Llámanos ahora y uno de nuestros asesores te atenderá inmediatamente</p>
+                <div class="cta-buttons">
+                    <a href="tel:+525512345678" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Llamar Ahora
+                    </a>
+                    <a href="https://wa.me/525512345678" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-car"></i>
+                        <span>AutoElite</span>
+                    </div>
+                    <p>Tu concesionaria de confianza con más de 15 años de experiencia en el mercado automotriz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="vehiculos.html">Catálogo</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="financiamiento.html">Financiamiento</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Venta de Autos</a></li>
+                        <li><a href="#">Financiamiento</a></li>
+                        <li><a href="#">Servicio Técnico</a></li>
+                        <li><a href="#">Garantías</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@autoelite.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, CDMX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoElite. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
